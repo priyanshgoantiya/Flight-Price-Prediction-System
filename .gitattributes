@@ -1,2 +1,4 @@
 data/raw/goibibo_flights_data filter=lfs diff=lfs merge=lfs -text
 data/raw/goibibo_flights_data.csv filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+goibibo_flights_data filter=lfs diff=lfs merge=lfs -text
