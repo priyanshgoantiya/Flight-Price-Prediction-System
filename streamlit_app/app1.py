@@ -7,17 +7,14 @@ import pickle
 import joblib
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Load the pickled model
-with open('models/model(XGB).pikle', 'rb') as f:
+with open('models/model(XGB).pkl', 'rb') as f:
     pipeline = pickle.load(f)
 
-# Save using joblib and reload
-joblib.dump(pipeline, "xgb_pipeline.joblib")
-pipeline = joblib.load('xgb_pipeline.joblib')
+pipeline = joblib.load("xgb_pipeline.joblib")
 
 # Load preprocessed dataframe (optional for EDA)
 with open('data/processed/df', 'rb') as file:
     df = pickle.load(file)
-
 # Sidebar Navigation
 st.sidebar.title("Flight Price Prediction System")
 selection = st.sidebar.radio("Go to", ["Home", "Price Prediction", "Evaluation"])
