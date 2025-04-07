@@ -8,7 +8,7 @@ import joblib
 import xgboost
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Load the XGBoost model pipeline
-pipeline = joblib.load("xgb_pipeline.joblib")
+pipeline = joblib.load("models/xgb_pipeline.joblib")
 
 # Load preprocessed dataframe (optional for EDA)
 with open('data/processed/df', 'rb') as file:
