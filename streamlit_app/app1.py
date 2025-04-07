@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
+import xgboost as xgb
 import datetime
 import pickle
 import joblib
