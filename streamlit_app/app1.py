@@ -15,7 +15,7 @@ joblib.dump(pipeline, "xgb_pipeline.joblib")
 pipeline = joblib.load('xgb_pipeline.joblib')
 
 # Load preprocessed dataframe (optional for EDA)
-with open('/content/df', 'rb') as file:
+with open('data/processed/df', 'rb') as file:
     df = pickle.load(file)
 
 # Sidebar Navigation
