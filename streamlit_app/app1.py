@@ -5,6 +5,7 @@ import plotly.express as px
 import datetime
 import pickle
 import joblib
+import xgboost
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Load the pickled model
 with open('models/model(XGB).pkl', 'rb') as f:
