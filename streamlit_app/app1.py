@@ -8,10 +8,11 @@ import joblib
 import xgboost
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Load the XGBoost model pipeline
-pipeline = joblib.load("models/xgb_pipeline.joblib")
+with open('/content/model(XGB).pkl', 'rb') as file:
+    pipeline = pickle.load(file)
 
 # Load preprocessed dataframe (optional for EDA)
-with open('data/processed/df', 'rb') as file:
+with open('/content/df', 'rb') as file:
     df = pickle.load(file)
 # Sidebar Navigation
 st.sidebar.title("Flight Price Prediction System")
