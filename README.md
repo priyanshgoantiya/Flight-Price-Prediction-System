@@ -2,7 +2,7 @@
 A machine learning model to predict flight ticket prices based on airline, route, and other factors.
 # ✈️ Flight Price Prediction System
 
-![Flight App Screenshot](C:\Users\Admin\Pictures\Screenshots)
+![Flight App Screenshot](Images/Screenshot (445).png)
 
 ## 📍 Project Overview
 
